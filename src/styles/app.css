@@ -1,0 +1,21 @@
+/* ./src/styles/app.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        font-family: Noto-Sans, system-ui, sans-serif;
+    }
+}
+
+.my-custom-bg {
+    background-image: url('../assets/img_123_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 50;
+}
