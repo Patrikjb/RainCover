@@ -1,7 +1,8 @@
 <template>
     <div class="mt-24 py-16 h-screen text-white">
 
-        <div class="mx-12 p-10 bg-black bg-opacity-70 text-white">
+        <div class="mx-12 p-10 bg-black bg-opacity-70 text-white 
+        sm:text-xl">
             <!-- Blackbpx -->
 
             <div class="flex flex-col px-4 gap-12">
@@ -11,7 +12,8 @@
                 class="flex flex-col gap-3 cursor-pointer">
 
                     <h1 class="text-yellow-400">{{content.number}}</h1>
-                    <h2 class="text-white text-xl font-medium">{{content.title}}</h2>
+                    <h2 class="text-white text-xl font-medium
+                    sm:text-2xl">{{content.title}}</h2>
                     <p class="text-zinc-400">
                         {{content.textShort}}..
                     </p>
@@ -46,7 +48,7 @@ const contents = ref([
         isActive: false,
         number: "01",
         textShort: 'Waterproof rain covers for large backpacks and rugsacks.',
-        textLong: 'Designed to fit even aluminium framed rucksacks up to 130 l. Compression paracord makes it fit smaller rucksacks (> 60 l).'
+        textLong: 'Designed to fit even aluminium framed rucksacks up to 130 l. Compression elastic cord makes it fit smaller rucksacks (> 60 l).'
     },
     {
         title: 'Handmade',

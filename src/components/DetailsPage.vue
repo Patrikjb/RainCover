@@ -1,7 +1,8 @@
 <template>
     <div class="mt-24 py-16 text-white">
 
-        <div class="mx-12 p-10 bg-black bg-opacity-70 text-white">
+        <div class="mx-12 p-10 bg-black bg-opacity-70 text-white
+        sm:text-xl">
             <!-- Blackbpx -->
 
             <div class="flex flex-col px-4 gap-6">
@@ -9,7 +10,8 @@
                 <div v-for="(content,index) in contents" v-bind:key="index" v-on:click="toggle(content)"
                     class="flex flex-col gap-3 cursor-pointer">
 
-                    <h2 class="text-white text-xl font-medium">{{content.title}}</h2>
+                    <h2 class="text-white text-xl font-medium
+                    sm:text-2xl">{{content.title}}</h2>
                     <p class="text-zinc-400" v-if="content.isActive">
                         {{content.textLong}}
                     </p>

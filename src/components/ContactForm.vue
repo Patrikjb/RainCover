@@ -9,7 +9,8 @@
         <!-- color options -->
         <div class="bg-zinc-900 my-4 p-3">
             <div class="text-zinc-400 text-xl">Color: {{ picked_color }}</div>
-            <div class="bg-zinc-900 flex justify-around mt-2">
+            <div class="bg-zinc-900 flex justify-around mt-2
+            sm:justify-center sm:gap-10">
                 <input type="radio" id="gray" v-model="picked_color" name="picked_color" value="Gray" class="w-5">
                 <label for="gray" class="text-zinc-400 text-xl font-semibold">Gray</label>
                 <input type="radio" id="other" v-model="picked_color" name="picked_color" value="Other" class="w-5">
@@ -39,7 +40,10 @@
 
         <textarea class="mt-4 p-4 w-full bg-zinc-900 text-white text-xl h-48" name="contact_message"
             placeholder="Wishes, comments, etc." ></textarea> <br />
-        <!-- <div class="g-recaptcha" :data-sitekey="site_key"></div> -->
+
+
+        <!-- TODO ADD CAPTCHA -->
+        <!-- <div class="g-recaptcha" :data-sitekey="site_key"></div> --> -->
         <br />
 
         <input class="bg-yellow-400 text-black py-4 font-bold
