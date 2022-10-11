@@ -1,7 +1,5 @@
 <template>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <div class="w-screen h-screen">
         <!-- hamburger menu icon for small screen, otherwise desktop-->
         <div v-on:click="toggleNav" class="pt-4 pl-6 h-9 w-9 flex flex-col gap-1 items-center justify-center
@@ -27,8 +25,10 @@
         </div>
 
         <!-- Header (landing page) -->
-        <HandMadeHeader class="mt-36 ml-4 float
-        sm:mt-52 sm:text-center" />
+        <div class="mt-32 ml-4 float sm:mt-52 sm:text-center">
+            <img class="h-14 drop-shadow-lg sm:m-auto sm:h-24" v-bind:src="require('../assets/logo-no-background.svg')" alt="">
+            <HandMadeHeader class="mt-10" />
+        </div>
 
     </div>
 

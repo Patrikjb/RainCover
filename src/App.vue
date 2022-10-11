@@ -1,10 +1,11 @@
 <template>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <div v-if="isMobile()" class="my-custom-bg">
-      <MobileView/>  
+    <MobileView/>
   </div>
-  <div v-else>
-      <!-- desktop view -->
-      hi
+  <div v-else class="my-custom-bg-desktop">
+    <MainView/>
   </div>
 </template>
 

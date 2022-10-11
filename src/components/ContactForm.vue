@@ -1,9 +1,12 @@
 <template>
+    <p class=" text-lg mx-4 text-zinc-400 mt-2 text-center font-semibold">This contact form does not oblige you to buy. If you are
+        interested in buying, invoice will be sent based on contact form.</p>
     <form class="mx-12" ref="form" @submit.prevent="sendMail">
         <input class="mt-4 p-4 w-full bg-zinc-900 text-white text-xl" type="text" placeholder="Name" name="user_name"
             required>
         <input class="mt-4 p-4 w-full bg-zinc-900 text-white text-xl" type="text" placeholder="Email" name="user_email"
             required>
+        <div class=""></div>
 
 
         <!-- color options -->
@@ -39,7 +42,7 @@
         <!-- message -->
 
         <textarea class="mt-4 p-4 w-full bg-zinc-900 text-white text-xl h-48" name="contact_message"
-            placeholder="Wishes, comments, etc." ></textarea> <br />
+            placeholder="Questions, comments, etc." ></textarea> <br />
 
 
         <!-- TODO ADD CAPTCHA -->
